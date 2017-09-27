@@ -1,0 +1,41 @@
+$SIDEMENU_TOP: #ffffff;
+$SIDEMENU_BOTTOM: #C0C0C0;
+$SIDEMENU_TRANSPARENCY: rgba(255,255,255,0.3);
+
+page-slider {
+
+  .img {
+        background-image: url(https://media.giphy.com/media/9mL99dUOnQPWo/giphy.gif);
+        background-repeat: repeat;
+        width: 100%;
+        height: 100%;
+    }
+  .text
+  {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 22px;
+    color: #000000;
+  }
+  .btnframe
+  {
+    width: 100%;
+    background-color:  #5293A5;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+
+  }
+
+  .master
+  {
+        background: -webkit-gradient(left top, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+        background: -o-linear-gradient(bottom right, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+        background: -moz-linear-gradient(bottom right, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+        background: linear-gradient(to bottom right, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+
+  }
+
+
+}

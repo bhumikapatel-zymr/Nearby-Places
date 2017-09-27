@@ -1,0 +1,21 @@
+<ion-menu side="left" [content]="content" menuClose type="overlay">
+    <ion-header>
+        <ion-toolbar>
+            <ion-title>Menu</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <ion-content>
+        <ion-list>
+    <ion-item menuClose >
+      <button class ="buttonframe"  (click)="openPageMap()" menu-close>Map</button>
+  </ion-item>
+  <ion-item menuClose>
+    <button class ="buttonframe"  (click)="openPageFavourite()" menu-close>Favourite</button>
+  </ion-item>
+  <ion-item menuClose>
+    <button class ="buttonframe"  (click)="openPageLogout()" menu-close>Logout</button>
+  </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

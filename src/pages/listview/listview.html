@@ -1,0 +1,48 @@
+<!--
+  Generated template for the ListviewPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color= "color1">
+    <ion-buttons left >
+       <button ion-button menuToggle  menuClose>
+         <ion-icon name="menu"  menuClose></ion-icon>
+       </button>
+     </ion-buttons>
+    <ion-title>listview</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list>
+    <ion-item *ngFor="let place of places" class="app-font-25" (click)="addtofav(place.name,place.vicinity,place.icon)">
+      <ion-avatar item-start>
+              <img src = {{place.icon}}>
+        </ion-avatar>
+        <ion-row>
+          <ion-col col-67>
+          <p>{{place.name}}</p>
+        </ion-col>
+          <ion-col col-4>
+            <ion-buttons end >
+           <button  icon-only class="buttonframe">
+             <ion-icon name="star"></ion-icon>
+           </button>
+         </ion-buttons>
+       </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-67>
+        <h5>{{place.vicinity}}</h5>
+      </ion-col>
+      </ion-row>
+
+
+    </ion-item>
+  </ion-list>
+</ion-content>
